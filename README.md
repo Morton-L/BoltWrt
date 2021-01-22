@@ -40,6 +40,9 @@ chosen applications for your target system.
 
 ## Acknowledgments
 
+- [OpenWrt](https://github.com/openwrt/openwrt)
+- [argon](https://github.com/jerrykuku/luci-theme-argon)
+
 ## License
 
 
