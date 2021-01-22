@@ -183,7 +183,7 @@ if VERSIONOPT
 	config VERSION_REPO
 		string
 		prompt "Release repository"
-		default "http://downloads.openwrt.org/releases/19.07.6"
+		default "https://mirrors.tuna.tsinghua.edu.cn/lede/releases/19.07.6"
 		help
 			This is the repository address embedded in the image, it defaults
 			to the trunk snapshot repo; the url may contain the following placeholders:
