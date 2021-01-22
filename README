@@ -1,11 +1,22 @@
-  _______                     ________        __
- |       |.-----.-----.-----.|  |  |  |.----.|  |_
- |   -   ||  _  |  -__|     ||  |  |  ||   _||   _|
- |_______||   __|_____|__|__||________||__|  |____|
-          |__| W I R E L E S S   F R E E D O M
+# BoltWrt
+
+ -----------------------------------------------------
+         ____        _ ___          __   _   
+        |  _ \      | | \ \        / /  | |  
+        | |_) | ___ | | |\ \  /\  / / __| |_ 
+        |  _ < / _ \| | __\ \/  \/ / '__| __|
+        | |_) | (_) | | |_ \  /\  /| |  | |_ 
+        |____/ \___/|_|\__| \/  \/ |_|   \__|
+                                      
  -----------------------------------------------------
 
-This is the buildsystem for the OpenWrt Linux distribution.
+## 中文
+
+### 编译
+
+## English
+
+### Make
 
 To build your own firmware you need a Linux, BSD or MacOSX system (case
 sensitive filesystem required). Cygwin is unsupported because of the lack
@@ -27,8 +38,8 @@ toolchain, target system & firmware packages.
 the cross-compile toolchain and then cross-compile the Linux kernel & all
 chosen applications for your target system.
 
-Sunshine!
-	Your OpenWrt Community
-	http://www.openwrt.org
+## Acknowledgments
+
+## License
 
 
