@@ -1,42 +1,36 @@
 # BoltWrt
 
  -----------------------------------------------------
-          ____        _ ___          __   _   
-         |  _ \      | | \ \        / /  | |  
-         | |_) | ___ | | |\ \  /\  / / __| |_ 
-         |  _ < / _ \| | __\ \/  \/ / '__| __|
-         | |_) | (_) | | |_ \  /\  /| |  | |_ 
-         |____/ \___/|_|\__| \/  \/ |_|   \__|
+ __________       .__   __   __      __          __   
+ \______   \ ____ |  |_/  |_/  \    /  \________/  |_ 
+  |    |  _//  _ \|  |\   __\   \/\/   /\_  __ \   __\
+  |    |   (  <_> )  |_|  |  \        /  |  | \/|  |  
+  |______  /\____/|____/__|   \__/\  /   |__|   |__|  
+         \/                        \/                 
                                       
  -----------------------------------------------------
 
-## 中文
+## 中文说明
 
-### 编译
+### 标准部署流程
 
-## English
+#### 固件选择
 
-### Make
+您可以通过访问 固件 页面来获取正式版固件,并根据具体情况来选择使用ext4文件系统或squashfs文件系统
+您可以通过访问 [固件](https://github.com/Morton-L/BoltWrt/releases) 页面来获取正式版固件,并根据具体情况来选择使用ext4文件系统或squashfs文件系统
+使用ext4文件系统或squashfs文件系统不会影响设备的正常运行或引起兼容性问题,他们只有一个区别,即前者
+为可读写固件后者为只读固件,通常情况下我建议使用squashfs文件系统,因为当系统遇到灾难性故障时可能需
+要通过"恢复出厂设置"功能来快速恢复设备状态,这时我们会利用到squashfs文件系统的特性,您可以放心的是
+squashfs文件系统并不会影响正常的软件安装,更新或卸载,它犹如您的IPhone或Android手机一样提供可靠保障
 
-To build your own firmware you need a Linux, BSD or MacOSX system (case
-sensitive filesystem required). Cygwin is unsupported because of the lack
-of a case sensitive file system.
+#### 固件安装
 
-You need gcc, binutils, bzip2, flex, python, perl, make, find, grep, diff,
-unzip, gawk, getopt, subversion, libz-dev and libc headers installed.
 
-1. Run "./scripts/feeds update -a" to obtain all the latest package definitions
-defined in feeds.conf / feeds.conf.default
 
-2. Run "./scripts/feeds install -a" to install symlinks for all obtained
-packages into package/feeds/
+### 高级部署流程
 
-3. Run "make menuconfig" to select your preferred configuration for the
-toolchain, target system & firmware packages.
 
-4. Run "make" to build your firmware. This will download all sources, build
-the cross-compile toolchain and then cross-compile the Linux kernel & all
-chosen applications for your target system.
+
 
 ## Acknowledgments
 
