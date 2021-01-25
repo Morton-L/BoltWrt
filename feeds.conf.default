@@ -1,4 +1,4 @@
-src-git packages https://git.openwrt.org/feed/packages.git^ce5a4eaea218111350e05ea86de8171344a70ce4
+src-git packages https://github.com/Morton-L/OpenWrt-Packages.git;main
 src-git boltwrt https://github.com/Morton-L/BoltWrt-Packages.git;main
 src-git luci https://github.com/Morton-L/BoltWrt-LuCI.git;main
 src-git routing https://git.openwrt.org/feed/routing.git^02b4dbfcb7b8f8b566940847d22d5a6f229d2e66
