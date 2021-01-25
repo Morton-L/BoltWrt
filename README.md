@@ -10,9 +10,39 @@
                                       
  -----------------------------------------------------
 
-## 中文说明
+## About BoltWrt - 关于BoltWrt
 
-### 标准部署流程
+BoltWrt是由我发起的路由器系统,它在OpenWrt的基础上,针对中国用户需求,添加了很多高级功能和特性.它的目标是打造一个高效,稳定,安全,易用的路由器系统.
+
+从2021年元月开始,BoltWrt正式对外公布,BoltWrt团队在积极的开发和维护着它,同时BoltWrt是社区合作的成果,欢迎大家参与其中,贡献自己的力量.
+
+## Features - 特性
+
+- 继承OpenWrt-19.07.6的所有特性,兼容OpenWrt的配置;
+- 友好的Material Design 风格界面
+- 适用于中国网络的配置调整与功能实现
+- 实时与多维度的运行状态监视
+- 详细的说明文档和升级日志
+
+## Changelog - 变更记录
+
+#### BoltWrt-1.0.0
+
+- 新增功能:支持通过HTTPS协议访问后台
+- 新增功能:NetData实时性能监控
+- 新增模块:iperf3网络速度测试工具
+- 新增模块:进程查看器
+- 系统调整:对时服务器调整为ntp.org,微软,阿里云和谷歌
+- 系统调整:引导等待时间缩短至3秒减少等待时间
+- 系统调整:软件源切换为清华大学镜像站
+- 内核调整:扩容内核分区大小至32MB,根分区大小扩容至1GB
+- 主题:
+
+## 标准部署流程
+
+
+
+## 编译流程
 
 #### 固件选择
 
@@ -35,11 +65,14 @@ squashfs文件系统并不会影响正常的软件安装,更新或卸载,它犹�
 
 
 
-## Acknowledgments
+## Acknowledgments - 致谢
 
 - [OpenWrt](https://github.com/openwrt/openwrt)
 - [argon](https://github.com/jerrykuku/luci-theme-argon)
+- [清华大学开源软件镜像站](https://mirrors.tuna.tsinghua.edu.cn)
+- [UPX](https://upx.github.io)
+
 
 ## License
 
-[GPL](https://github.com/Morton-L/BoltWrt/blob/main/LICENSE)
+[GPL](LICENSE)
