@@ -1,5 +1,5 @@
 #!/bin/sh
-# Copyright (C) 2006-2013 OpenWrt.org
+# Copyrights (C) 2019 - 2021 Rowsen Ltd. All Rights Reserved.
 # Copyright (C) 2010 Vertical Communications
 
 boot_hook_splice_start() {

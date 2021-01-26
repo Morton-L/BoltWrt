@@ -1,6 +1,6 @@
 /*
  *
- *  Copyright (C) 2007 OpenWrt.org
+ *  Copyrights (C) 2019 - 2021 Rowsen Ltd. All Rights Reserved.
  *  Copyright (C) 2007 Gabor Juhos <juhosg at openwrt.org>
  *
  *  This program is free software; you can redistribute it and/or modify it

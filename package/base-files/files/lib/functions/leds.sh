@@ -1,5 +1,5 @@
 #!/bin/sh
-# Copyright (C) 2013 OpenWrt.org
+# Copyrights (C) 2019 - 2021 Rowsen Ltd. All Rights Reserved.
 
 get_dt_led() {
 	local label

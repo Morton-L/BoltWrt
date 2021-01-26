@@ -1,6 +1,6 @@
 #!/usr/bin/env perl
 # 
-# Copyright (C) 2006 OpenWrt.org
+# Copyrights (C) 2019 - 2021 Rowsen Ltd. All Rights Reserved.
 # Copyright (C) 2016 LEDE project
 #
 # This is free software, licensed under the GNU General Public License v2.
