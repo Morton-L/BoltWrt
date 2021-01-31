@@ -97,6 +97,29 @@ make -j$(nproc)
 
 ## Changelog - 变更记录
 
+#### BoltWrt-1.0.1 (构建中...尚未发布)
+
+- 问题修复:imagebuilder: pass IB=1 on checking requirements
+- 内核升级: 由 4.14 升级为 4.14.217
+- 问题修复:wireguard: Fix compile with kernel 4.14.217
+- 问题修复:odhcp6c: fix IPv6 routing loop on point-to-point links
+- 问题修复:netifd: fix IPv6 routing loop on point-to-point links
+- 问题修复:dnsmasq: backport fixes
+- 模块更新:openwisp-config: 更新至 0.5.0
+- 问题修复:https-dns-proxy: CPU使用率问题
+- 模块更新:youtube-dl: 更新至 2021.1.16
+- 模块更新:msmtp: 更新至 1.8.14
+- 问题修复:php7: Fix prepare target incorrectly referencing 'configure.in' instead of 'configure.ac'
+- 模块更新:nextdns: 更新至 1.10.1
+- 问题修复:samba4: 
+	1. 修复可能的漏洞
+	2. sanetize all external template/config inputs
+	3. 修复一些 shellcheck 警告
+- 漏洞修复:sudo: backport patches for CVE-2021-3156
+- 配置调整:luci-app-sqm: remove orphaned ACL file
+- 国际化:treewide: Sync and backport translations from master
+- 数据更新:时区数据: 更新至2021a
+
 #### BoltWrt-1.0.0
 
 - 新增功能:支持通过HTTPS协议访问后台
