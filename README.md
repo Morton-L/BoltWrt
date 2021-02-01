@@ -66,7 +66,7 @@ sudo apt-get install $(curl -fsSL git.io/OpenWrtPrerequisites-Ubuntu_2004)
 ```
 2. 获取源码,并做编译前的必要工作
 ```bash
-git clone --branch v1.0.0 https://github.com/Morton-L/BoltWrt.git && chmod -Rf 777 BoltWrt/
+git clone --branch v1.1.0 https://github.com/Morton-L/BoltWrt.git && chmod -Rf 777 BoltWrt/
 cd BoltWrt/ && ./scripts/feeds update -a && chmod -Rf 777 feeds && ./scripts/feeds install -a
 ```
 3. 使用`make menuconfig`命令进入模拟图形化界面定义平台,架构等固件的基础配置
@@ -97,8 +97,17 @@ make -j$(nproc)
 
 ## Changelog - 变更记录
 
-#### BoltWrt-1.0.1 (构建中...尚未发布)
+### 版本策略
 
+- 主版本号：做了不兼容的 API 修改，
+- 次版本号：做了向下兼容的功能性新增，
+- 修订号  ：做了向下兼容的问题修正。
+
+#### BoltWrt-1.1.0
+
+- 新增功能:frpc端口映射工具
+- 新增功能:ZeroTier虚拟内网工具
+- 新增模块:SMBA实现SMB协议
 - 问题修复:imagebuilder: pass IB=1 on checking requirements
 - 内核升级: 由 4.14 升级为 4.14.217
 - 问题修复:wireguard: Fix compile with kernel 4.14.217
