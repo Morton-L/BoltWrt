@@ -105,15 +105,15 @@ make -j$(nproc)
 
 #### BoltWrt-1.2.0(构建中...暂未发布)
 
-添加SCSI设备支持
-添加USB 1.0,1.1,2.0,3.0的支持
-添加USB大容量存储支持
-添加设备挂载支持
-添加对exfat,ext4,ntfs,FAT16/32文件系统支持
-添加ntfs文件系统读写驱动
-添加e2fsprogs工具
-添加usbutils工具
-添加西欧常用字符`ISO 8859-1`编码,`utf8`编码,`ASCII`(CP437)编码,中国`GBK`(CP936)编码支持
+- 添加SCSI设备支持
+- 添加USB 1.0,1.1,2.0,3.0的支持
+- 添加USB大容量存储支持
+- 添加设备挂载支持
+- 添加对exfat,ext4,ntfs,FAT16/32文件系统支持
+- 添加ntfs文件系统读写驱动
+- 添加e2fsprogs工具
+- 添加usbutils工具
+- 添加西欧常用字符`ISO 8859-1`编码,`utf8`编码,`ASCII`(CP437)编码,中国`GBK`(CP936)编码支持
 
 #### BoltWrt-1.1.0
 
