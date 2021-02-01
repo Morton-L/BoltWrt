@@ -119,7 +119,7 @@ make -j$(nproc)
 
 - 新增功能:frpc端口映射工具
 - 新增功能:ZeroTier虚拟内网工具
-- 新增模块:SMBA实现SMB协议
+- 新增模块:Samba实现SMB协议
 - 问题修复:imagebuilder: pass IB=1 on checking requirements
 - 内核升级: 由 4.14 升级为 4.14.217
 - 问题修复:wireguard: Fix compile with kernel 4.14.217
@@ -190,6 +190,9 @@ make -j$(nproc)
 - [argon](https://github.com/jerrykuku/luci-theme-argon)
 - [清华大学开源软件镜像站](https://mirrors.tuna.tsinghua.edu.cn)
 - [UPX](https://upx.github.io)
+- [frp](https://github.com/fatedier/frp)
+- [ZeroTier](https://www.zerotier.com/)
+- [Samba](https://www.samba.org/)
 
 ## 标记
 
