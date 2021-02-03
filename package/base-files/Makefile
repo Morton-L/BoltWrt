@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2007-2016 OpenWrt.org
+# Copyrights (C) 2019 - 2021 Rowsen Ltd. All Rights Reserved.
 # Copyright (C) 2010 Vertical Communications
 #
 # This is free software, licensed under the GNU General Public License v2.
@@ -38,7 +38,7 @@ define Package/base-files
   SECTION:=base
   CATEGORY:=Base system
   DEPENDS:=+netifd +libc +procd +jsonfilter +SIGNED_PACKAGES:usign +SIGNED_PACKAGES:openwrt-keyring +NAND_SUPPORT:ubi-utils +fstools +fwtool
-  TITLE:=Base filesystem for OpenWrt
+  TITLE:=Base filesystem for BoltWrt
   URL:=http://openwrt.org/
   VERSION:=$(PKG_RELEASE)-$(REVISION)
 endef
