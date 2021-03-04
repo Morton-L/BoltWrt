@@ -114,8 +114,30 @@ make -j$(nproc)
 - 添加驱动:ntfs文件系统读写驱动
 - 新增功能:e2fsprogs工具
 - 新增功能:usbutils工具
-- 国际化:添加西欧常用字符`ISO 8859-1`编码,`utf8`编码,`ASCII`(CP437)编码,中国`GBK`(CP936)编码支持
+- 新增功能:mvebu: omnia: make initramfs image usable out of the box
 - 新增功能:SSH
+- 国际化:添加西欧常用字符`ISO 8859-1`编码,`utf8`编码,`ASCII`(CP437)编码,中国`GBK`(CP936)编码支持
+- 模块更新:mt76: 更新到最新版本
+- 模块更新:wolfssl: 更新到 v4.6.0-stable
+- 模块更新:opkg: update to latest git HEAD of branch openwrt-19.07
+- 模块更新:openssl: 升级至 1.1.1j
+- 模块更新:bcm63xx: sprom: override the PCI device ID
+- 问题修复:wolfssl: 
+    1. Fix hostapd build with wolfssl 4.6.0
+	2. 修复漏洞:CVE-2021-3336
+- 问题修复:hostapd: fix P2P group information processing vulnerability
+- 问题修复:hostapd: backport ignoring 4addr mode enabling error
+- 问题修复:bcm63xx: R5010UNv2: fix flash partitions for 16MB flash
+- 问题修复:ath79: fix USB power GPIO for TP-Link TL-WR810N v1
+- 内核升级: 升级为4.14.222
+- 系统调整:wolfssl: 启用 HAVE_SECRET_CALLBACK
+- 系统调整:ramips: 
+    1. remove factory image for TP-Link Archer C2 v1
+    2. remove factory image for TP-Link Archer C20 v1
+	3. mark toggle input on EX6150 as a switch
+	4. ethernet: 禁用 TSO支持以提高稳定性
+- 系统调整:mac80211: Remove 357-mac80211-optimize-skb-resizing.patch
+- 系统调整:lantiq: fritz7320: 启用 USB 电源
 
 #### BoltWrt-1.1.0
 
