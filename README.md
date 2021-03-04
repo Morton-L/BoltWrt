@@ -18,7 +18,7 @@ BoltWrt是由我发起的路由器系统,它在OpenWrt的基础上,针对中国�
 
 ## Features - 特性
 
-- 继承OpenWrt-19.07.6的所有特性,兼容OpenWrt的配置;
+- 继承OpenWrt-19.07.7的所有特性,兼容OpenWrt的配置;
 - 友好的 Material Design 风格界面
 - 适用于中国网络的配置调整与功能实现
 - 实时与多维度的运行状态监视
@@ -117,11 +117,33 @@ make -j$(nproc)
 - 新增功能:mvebu: omnia: make initramfs image usable out of the box
 - 新增功能:SSH
 - 国际化:添加西欧常用字符`ISO 8859-1`编码,`utf8`编码,`ASCII`(CP437)编码,中国`GBK`(CP936)编码支持
+- 国际化:treewide: i18n backport and 同步翻译
 - 模块更新:mt76: 更新到最新版本
 - 模块更新:wolfssl: 更新到 v4.6.0-stable
 - 模块更新:opkg: update to latest git HEAD of branch openwrt-19.07
 - 模块更新:openssl: 升级至 1.1.1j
 - 模块更新:bcm63xx: sprom: override the PCI device ID
+- 模块更新:ksmbd-tools: 升级至 3.3.4
+- 模块更新:ksmbd: 升级至 3.3.4
+- 模块更新:mosquitto: 升级至 1.6.13
+- 模块更新:bind: 升级至 9.16.12
+- 模块更新:zerotier: 升级至 1.6.4
+- 模块更新:python3: 升级至 3.7.10, refresh patches
+- 模块更新:netdata: 升级至 1.29.2
+- 模块更新:vpn-policy-routing: 升级至 0.3
+- 模块更新:openvswitch: 升级至 2.11.6 (security fix)
+- 模块更新:python-paho-mqtt: 升级至 1.5.0
+- 模块更新:htop: 升级至 3.0.5-1
+- 模块更新:knot: 升级至 3.0.4
+- 模块更新:adblock: update blocklist sources
+- 模块更新:libedit: 升级至 20210216-3.1
+- 模块更新:nano: 升级至 5.6
+- 模块更新:unbound: 升级至 1.13.1
+- 模块更新:python-maho-mqtt: 升级至 1.5.1
+- 模块更新:vpn-policy-routing: 升级至 0.3.2-18
+- 模块更新:vpn-policy-routing: 
+    1. custom user scripts improvements
+	2. update user netflix file
 - 问题修复:wolfssl: 
     1. Fix hostapd build with wolfssl 4.6.0
 	2. 修复漏洞:CVE-2021-3336
@@ -129,6 +151,22 @@ make -j$(nproc)
 - 问题修复:hostapd: backport ignoring 4addr mode enabling error
 - 问题修复:bcm63xx: R5010UNv2: fix flash partitions for 16MB flash
 - 问题修复:ath79: fix USB power GPIO for TP-Link TL-WR810N v1
+- 问题修复:luci-base: 
+    1. luci.js: 修复 sortedKeys() ordering
+	2. ui.js: resolve parent ul early in UIDropdown.toggleItem()
+- 问题修复:simple-adblock: bugfix: ListValue的默认值
+- 问题修复:ddns: fix multiple authenticated RCEs
+- 问题修复:防火墙: 
+    1. properly handle custom multi IP/MAC input
+	2. fix creating multiple networks from zone network selector
+	3. zones.js: fix HTML display in ct helper selection
+- 问题修复:rpcd-mod-luci: Fix parsing of DUID-LLT's in duid2ea
+- 问题修复:keepalived: 
+    1. 添加脚本安全参数以修复警告
+    2. 修复配置错误
+- 问题修复:isc-dhcp: seeing crashes when attempting to update dynamic dns
+- 问题修复:vpn-policy-routing: bugfix: netflix user file missing redirect
+- 漏洞修复:screen: backport fix for CVE-2021-26937
 - 内核升级: 升级为4.14.222
 - 系统调整:wolfssl: 启用 HAVE_SECRET_CALLBACK
 - 系统调整:ramips: 
@@ -138,6 +176,26 @@ make -j$(nproc)
 	4. ethernet: 禁用 TSO支持以提高稳定性
 - 系统调整:mac80211: Remove 357-mac80211-optimize-skb-resizing.patch
 - 系统调整:lantiq: fritz7320: 启用 USB 电源
+- 功能调整:https-dns-proxy: 
+    1. 添加 nextdns.io 和 quad 101 接口
+	2. add Force DNS, IDNet support, add missing class to buttons
+- 功能调整:luci-base: 
+    1. network.js: sort interface statuses by metric, then name
+    2. validation.js: optionally support negative prefixes
+	3. firewall.js: manage zomne networks as list
+- 功能调整:防火墙: allow negative prefix lengths
+- 功能调整:simple-adblock: 移除对jsonfilter和旧代码的依赖
+- 功能调整:keepalived: set default run directory for pid file on build
+- 功能调整:getdns: 
+    1. fix compilation without deprecated OpenSSL APIs
+    2. Fix TLS V1.3 Ciphersuites option in Stubby
+	3. disable static linking of getdns utilities
+- 功能调整:https-dns-proxy: support for force DNS/DNS hijacking
+- 功能调整:ttyd: 强制启用登录身份验证
+- 功能调整:ksmbd: remove kmod-crypto-arc4 dependency
+- 功能调整:knot: 
+    1. disable libnghttp2 autodetection
+    2. disable embedded xdp
 
 #### BoltWrt-1.1.0
 
