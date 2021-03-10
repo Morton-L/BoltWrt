@@ -107,9 +107,15 @@ make -j$(nproc)
 #### BoltWrt-1.2.1
 
 - 模块更新:wolfssl: 更新至 v4.7.0-stable
+- 模块更新:ninja: 更新至 1.10.2并支持CMake编译
+- 模块更新:nano: 更新至 5.6.1
+- 模块更新:libpam: 更新至 1.5.1
+- 模块更新:nextdns: 更新至 1.11.0
 - 问题修复:hostapd: P2P: Fix a corner case in peer addition based on PD Request
 - 问题修复:build: fix checks for GCC11
+- 问题修复:修复几个功能的ui显示问题
 - 功能调整:清华大学软件源镜像站版本切换为19.07.7
+- 功能优化:vpn-policy-routing: better processing of custom user files
 
 #### BoltWrt-1.2.0
 
