@@ -104,6 +104,13 @@ make -j$(nproc)
 - 次版本号：做了向下兼容的功能性新增，
 - 修订号  ：做了向下兼容的问题修正。
 
+#### BoltWrt-1.2.1
+
+- 模块更新:wolfssl: 更新至 v4.7.0-stable
+- 问题修复:hostapd: P2P: Fix a corner case in peer addition based on PD Request
+- 问题修复:build: fix checks for GCC11
+- 功能调整:清华大学软件源镜像站版本切换为19.07.7
+
 #### BoltWrt-1.2.0
 
 - 添加SCSI设备支持
