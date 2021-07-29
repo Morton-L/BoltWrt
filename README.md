@@ -112,6 +112,9 @@ make -j$(nproc)
 - 模块更新：mac80211: Update to backports version 4.19.193-test1
 - 模块更新：openvpn: update to 2.4.11
 - 模块更新：ramips: backport unlocked mdiobus accessors
+- 模块更新: passwall
+- 模块更新: ssr-plus
+- 组件更新: 升级各类组件和依赖9项,同时清理过期过时和无用的组件
 - 功能优化：reduce number of files passed to ipk-remove
 - 功能优化：generic: platform/mikrotik: release mtd device after use
 - 功能调整：call ipkg-remove using xargs if #args>=512
@@ -133,6 +136,7 @@ make -j$(nproc)
 - 问题修复: tools/mklibs: Fix compile with GCC 11
 - 问题修复: ubox: fix init script validation of log_ip option
 - 问题修复: ath10k-ct: add security fixes
+- 问题修复: 修复一个编译报错信息
 
 #### BoltWrt-1.2.1
 
