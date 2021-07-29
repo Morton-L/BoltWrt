@@ -104,6 +104,14 @@ make -j$(nproc)
 - 次版本号：做了向下兼容的功能性新增，
 - 修订号  ：做了向下兼容的问题修正。
 
+#### BoltWrt-1.2.2
+
+- 内核升级：升级至4.14.224
+- 功能优化：reduce number of files passed to ipk-remove
+- 功能调整：call ipkg-remove using xargs if #args>=512
+- 问题修复：build: package-ipkg: avoid calling wildcard twice
+- 问题修复：bundle-libraries.sh: fix broken SDK compiler
+
 #### BoltWrt-1.2.1
 
 - 模块更新:wolfssl: 更新至 v4.7.0-stable
@@ -116,6 +124,7 @@ make -j$(nproc)
 - 问题修复:修复几个功能的ui显示问题
 - 功能调整:清华大学软件源镜像站版本切换为19.07.7
 - 功能优化:vpn-policy-routing: better processing of custom user files
+
 
 #### BoltWrt-1.2.0
 
