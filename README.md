@@ -106,19 +106,24 @@ make -j$(nproc)
 
 #### BoltWrt-1.2.2
 
-- 内核升级：升级至4.14.232
+- 内核升级：升级至4.14.236
 - 模块更新：mbedtls: update to 2.16.10
 - 模块更新：openssl: bump to 1.1.1k
-- 模块更新：mac80211: backport upstream fixes
+- 模块更新：mac80211: Update to backports version 4.19.193-test1
 - 模块更新：openvpn: update to 2.4.11
 - 模块更新：ramips: backport unlocked mdiobus accessors
-- 模块更新：mac80211: Update to backports version 4.19.189-1
 - 功能优化：reduce number of files passed to ipk-remove
 - 功能优化：generic: platform/mikrotik: release mtd device after use
 - 功能调整：call ipkg-remove using xargs if #args>=512
 - 功能调整：mwlwifi: add PKG_FLAGS:=nonshared
 - 功能调整：prereq-build: test for perl's Data::Dumper
-- 功能调整：openwrt-keyring: add OpenWrt 21.02 GPG/usign keys , Only copy sign key for 19.07 and 21.02
+- 功能调整：openwrt-keyring: 
+	1. add OpenWrt 21.02 GPG/usign keys
+	2. Only copy sign key for 19.07 and 21.02
+- 功能调整: mac80211: distance config: allow "auto" as a value
+- 功能调整: base-files: 
+	1. fix zoneinfo support 
+	2. fix /tmp/TZ when zoneinfo not installed
 - 问题修复：build: package-ipkg: avoid calling wildcard twice
 - 问题修复：bundle-libraries.sh: fix broken SDK compiler
 - 问题修复：ppp/pppoe-discovery: fix -W option
@@ -127,6 +132,7 @@ make -j$(nproc)
 - 问题修复：tplink-safeloader: fix C7v5 factory flashing from vendor fw > v1.1.x
 - 问题修复: tools/mklibs: Fix compile with GCC 11
 - 问题修复: ubox: fix init script validation of log_ip option
+- 问题修复: ath10k-ct: add security fixes
 
 #### BoltWrt-1.2.1
 
