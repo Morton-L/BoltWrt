@@ -106,9 +106,13 @@ make -j$(nproc)
 
 #### BoltWrt-1.2.2
 
-- 内核升级：升级至4.14.224
+- 内核升级：升级至4.14.230
+- 模块更新：mbedtls: update to 2.16.10
+- 模块更新：openssl: bump to 1.1.1k
+- 模块更新：mac80211: backport upstream fixes
 - 功能优化：reduce number of files passed to ipk-remove
 - 功能调整：call ipkg-remove using xargs if #args>=512
+- 功能调整：mwlwifi: add PKG_FLAGS:=nonshared
 - 问题修复：build: package-ipkg: avoid calling wildcard twice
 - 问题修复：bundle-libraries.sh: fix broken SDK compiler
 
