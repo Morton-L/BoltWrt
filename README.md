@@ -106,15 +106,27 @@ make -j$(nproc)
 
 #### BoltWrt-1.2.2
 
-- 内核升级：升级至4.14.230
+- 内核升级：升级至4.14.232
 - 模块更新：mbedtls: update to 2.16.10
 - 模块更新：openssl: bump to 1.1.1k
 - 模块更新：mac80211: backport upstream fixes
+- 模块更新：openvpn: update to 2.4.11
+- 模块更新：ramips: backport unlocked mdiobus accessors
+- 模块更新：mac80211: Update to backports version 4.19.189-1
 - 功能优化：reduce number of files passed to ipk-remove
+- 功能优化：generic: platform/mikrotik: release mtd device after use
 - 功能调整：call ipkg-remove using xargs if #args>=512
 - 功能调整：mwlwifi: add PKG_FLAGS:=nonshared
+- 功能调整：prereq-build: test for perl's Data::Dumper
+- 功能调整：openwrt-keyring: add OpenWrt 21.02 GPG/usign keys , Only copy sign key for 19.07 and 21.02
 - 问题修复：build: package-ipkg: avoid calling wildcard twice
 - 问题修复：bundle-libraries.sh: fix broken SDK compiler
+- 问题修复：ppp/pppoe-discovery: fix -W option
+- 问题修复：ramips: mt7530 swconfig: fix race condition in register access
+- 问题修复：dropbear: Fix CVE-2020-36254
+- 问题修复：tplink-safeloader: fix C7v5 factory flashing from vendor fw > v1.1.x
+- 问题修复: tools/mklibs: Fix compile with GCC 11
+- 问题修复: ubox: fix init script validation of log_ip option
 
 #### BoltWrt-1.2.1
 
