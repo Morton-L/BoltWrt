@@ -111,6 +111,7 @@ make -j$(nproc)
 - 增加驱动: 增加Intel(R) 82576网卡驱动
 - 增加驱动: 增加Intel(R) 82598/82599万兆网卡驱动
 - 增加驱动: 增加RealTek RTL-8169网卡驱动
+- 增加模块: SmartDNS
 
 #### BoltWrt-1.2.2
 
