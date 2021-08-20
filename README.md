@@ -112,6 +112,9 @@ make -j$(nproc)
 - 增加驱动: 增加Intel(R) 82598/82599万兆网卡驱动
 - 增加驱动: 增加RealTek RTL-8169网卡驱动
 - 增加模块: SmartDNS
+- 增加模块: OpenConnect VPN server
+- 增加功能: DDNS支持阿里云域名
+- 功能调整: 将IP/MAC绑定整合进DHCP菜单
 
 #### BoltWrt-1.2.2
 
