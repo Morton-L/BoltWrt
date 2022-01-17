@@ -105,6 +105,24 @@ make -j$(nproc)
 - 次版本号: 做了向下兼容的功能性新增，
 - 修订号  : 做了向下兼容的问题修正。
 
+#### BoltWrt-1.2.4
+
+- openssl: 
+	1. 在配置中使用 --cross-compile-prefix
+	2. 升级至1.1.1m
+- 内核升级: 升级至4.14.261
+- uboot:
+	1. 修复使用GCC-10作为主机编译器编译
+	2. layerscape和zynq修复使用dtc作为主机编译器编译
+	3. 修复安装系统 libmd 时的 sha1.h 标头冲突
+	4. fix hanging lzma kernel uncompression
+- 问题修复: sdk:修复缺少的包含目录
+- 问题修复: ar71xx: mikrotik: rb91x: fix 10M ethernet link speed
+- 模块更新: mac80211: 更新至 backports-4.19.207-1
+- 模块更新: tools/m4: 更新至 1.4.19
+- 模块更新: wireless-regdb: 更新至 version 2021.08.28
+
+
 #### BoltWrt-1.2.3
 
 - 增加驱动: 增加RealTek RTL-8139和RTL-8139C+网卡驱动
