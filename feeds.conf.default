@@ -1,6 +1,6 @@
-src-git packages https://github.com/Morton-L/OpenWrt-Packages.git^746561050263857c72322e2b93941a4529babd31
-src-git luci https://github.com/Morton-L/BoltWrt-LuCI.git^195abb93466693fbef324201a2dbe848cd37a771
-src-git boltwrt https://github.com/Morton-L/BoltWrt-Packages.git^c02c92e08046603dd9ff86e67dc5486845467c6c
+src-git packages https://github.com/Morton-L/OpenWrt-Packages.git;main
+src-git luci https://github.com/Morton-L/BoltWrt-LuCI.git;main
+src-git boltwrt https://github.com/Morton-L/BoltWrt-Packages.git;main
 src-git routing https://git.openwrt.org/feed/routing.git^ee0fbac61053614aa34be4d5283e1a86611d213a
 src-git telephony https://git.openwrt.org/feed/telephony.git^d88773392a46f220635d5223d38b44b0a9ca9831
 src-git freifunk https://github.com/freifunk/openwrt-packages.git^c621a4283870fe062489fe5e26a15deda7ef4ed7
